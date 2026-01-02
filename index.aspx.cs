@@ -55,7 +55,7 @@ namespace DXFReaderNETWebApplication
                         double ExternalArea = 0d;
                         double InternalLenght = 0d;
                         double InternalArea = 0d;
-                        bool ret = MathHelper.FindClosedAreaData(myDXF.DXF.Entities, out ExternalLenght, out ExternalArea, out InternalLenght, out InternalArea, out InternalCountoursNumber);
+                        bool ret = MathHelper.FindClosedAreaData(myDXF.DXF.Entities.ToList(), out ExternalLenght, out ExternalArea, out InternalLenght, out InternalArea, out InternalCountoursNumber);
                        
                         if (ret)
                         {
